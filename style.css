@@ -1,0 +1,26 @@
+body {
+    background-color: #000;
+    font-family: Courier, Consolas, Monaco;
+    color: #FFF;
+}
+h1, h2 {
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #0FF;
+}
+a:visited {
+    color: #808080;
+}
+a:hover {
+    color: #FF0;
+}
+a:active {
+    color: #F00;
+}
+ul {
+    list-style-type: "- ";
+}
