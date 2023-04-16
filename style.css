@@ -21,11 +21,18 @@ body {
     position: absolute;
     top: 0;
 }
-h1, h2 {text-transform: uppercase}
+/* .credits {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform: translate(25%, -25%);
+} */ /* mwehehe */
+h1, h2, small {text-transform: uppercase}
 html {
     font-family: Consolas, Monaco, Monospace;
     /*background: #0f0;*/ /*property for testing*/
 }
+img {user-select: none}
 @keyframes appear {
     0% {opacity: 0;}
     100% {opacity: 1;}
