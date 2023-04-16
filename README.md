@@ -8,5 +8,9 @@ This new page doesn't necessarily expand on the old allencs.org, but rather refo
 
 ## Authors
 
-I haven't really recruited anybody to work on this (since this was started on **April 4, 2023**), so the only person working in this repository is: 
+I haven't really recruited anybody to work on this (since this was started on **April 14, 2023**), so the only person working in this repository is: 
 * [me](https://github.com/mohibm708)!
+
+## Testing
+
+Currently, AllenCSF's appearance is tested through the CoderMerlin server [here](https://www.codermerlin.academy/users/mohibullah-meer/AllenCSF/index.html).
