@@ -6,34 +6,37 @@ a {
 a:link {color: #0FF}
 a:visited {color: #808080}
 a:hover, a:focus {color: #FF0}
-a:active {color: #F00}
+a:focus > .logo, :focus {outline: #F00 2px solid}
+a:active {color: #F00;}
 body {
+    animation: appear 0.5s 1 forwards;
     background-color: #000;
     color: #FFF;
     left: 0;
     margin: 0 23%;
     min-height: 100%;
+    opacity: 0;
     outline: #FFF 5px solid;
     padding: 0 1%;
     position: absolute;
     top: 0;
 }
-:focus {outline: #F00 2px solid}
 h1, h2 {text-transform: uppercase}
 html {
     font-family: Consolas, Monaco, Monospace;
     /*background: #0f0;*/ /*property for testing*/
 }
-img.logo {
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.logo {
     bottom: 0%;
+    height: 75px;
     margin: 0;
     position: fixed;
     right: 0%;
     transform: translate(-25%, -25%);
-    transition: background 0.25s;
+    width: 75px;
 }
-a:link > .logo {background: #0FF}
-a:visited > .logo {background: #808080}
-a:hover > .logo, a:focus > .logo {background: #FF0}
-a:active > .logo {background: #F00}
 ul {list-style-type: "- "}
