@@ -1,26 +1,24 @@
 body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 23%;
+    padding: 0 1%;
+    outline: #FFF 5px solid;
     background-color: #000;
-    font-family: Courier, Consolas, Monaco;
+    font-family: Monaco, Courier;
     color: #FFF;
+    min-height: 100%;
 }
-h1, h2 {
-    text-transform: uppercase;
-}
+* {margin: 0.5em 0}
+h1, h2 {text-transform: uppercase;}
 a {
     text-decoration: none;
+    transition: color 0.25s;
 }
-a:link {
-    color: #0FF;
-}
-a:visited {
-    color: #808080;
-}
-a:hover {
-    color: #FF0;
-}
-a:active {
-    color: #F00;
-}
-ul {
-    list-style-type: "- ";
-}
+a:link {color: #0FF;}
+a:visited {color: #808080;}
+a:hover {color: #FF0;}
+a:active {color: #F00;}
+ul {list-style-type: "- ";}
+html {/*background: #0f0;*/}
