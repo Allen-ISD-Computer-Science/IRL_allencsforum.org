@@ -3,11 +3,11 @@ a {
     text-decoration: none;
     transition: color 0.25s;
 }
-a:link {color: #0FF;}
+a:link, summary {color: #0FF;}
 a:visited {color: #808080;}
-a:hover, a:focus {color: #FF0;}
+a:hover, a:focus, summary:hover, summary:focus {color: #FF0;}
 a:focus > .logo, :focus {outline: #F00 2px solid;}
-a:active {color: #F00;}
+a:active, summary:active {color: #F00;}
 body {
     animation: appear 0.5s 1 forwards;
     background-color: #000;
@@ -22,35 +22,36 @@ body {
     top: 0;
     width: 50%;
 }
-/* .credits {
+br, img {user-select: none}
+div.credits {
+    background: #000;
+    bottom: calc(1% + 5px);
+    left: calc(12% - 5px);
+    margin: 0;
+    max-width: calc(16% - 5px);
+    outline: #FFF 5px solid;
+    padding: 0.5% 1%;
     position: fixed;
-    left: 0;
-    bottom: 0;
-    transform: translate(25%, -25%);
-} */ /* mwehehe */
-h1, h2, small {text-transform: uppercase;}
+    transform: translate(-50%, 0%);
+}
+h1, h2, small.credits {text-transform: uppercase;}
 html {
     animation: subtle 60s infinite;
     font-family: Consolas, Monaco, Monospace;
 /*    background: #0f0;*/ /*property for testing*/
 }
-img {user-select: none;}
 @keyframes appear {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
 @keyframes subtle {
-    0% {background: #000;}
-    10% {background: #200000}
-    20% {background: #000;} 
-    30% {background: #202000}
-    40% {background: #000;}
-    50% {background: #002000}
-    60% {background: #000;}
-    70% {background: #000020}
-    80% {background: #000;}
-    90% {background: #200020}
-    100% {background: #000;}
+    0.000000000% {background: #000;}
+    16.66666667% {background: #200000;}
+    33.33333333% {background: #202000;}
+    50.00000000% {background: #002000;}
+    66.66666667% {background: #000020;}
+    83.33333333% {background: #200020;}
+    100.0000000% {background: #000;}
 }
 .logo {
     bottom: 10px;
@@ -65,4 +66,14 @@ a:link > .logo {background: #0FF;}
 a:visited > .logo {background: #808080;}
 a:hover > .logo, a:focus > .logo {background: #FF0;}
 a:active > .logo {background: #F00;}
-ul {list-style-type: "- "}
+summary {
+    display: inline;
+    margin: 0;
+    transition: color 0.25s;
+    font-weight: bold;
+}
+summary:hover {cursor: pointer;}
+ul {
+    list-style-type: "- ";
+    padding-left: 2em;
+}
