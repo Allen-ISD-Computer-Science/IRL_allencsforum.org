@@ -1,13 +1,48 @@
-* {margin: 0.5em 0;}
+html {
+    animation: subtle 60s infinite;
+    font-family: Consolas, Monaco, Monospace;
+/*    background: #0f0;*/ /*property for testing*/
+}
+* {
+    margin: 0.5em 0;
+}
+
+
+
 a {
     text-decoration: none;
     transition: color 0.25s;
 }
-a:link, summary {color: #0FF;}
-a:visited {color: #808080;}
-a:hover, a:focus, summary:hover, summary:focus {color: #FF0;}
-a:focus > .logo, :focus {outline: #F00 2px solid;}
-a:active, summary:active {color: #F00;}
+a:link, summary {
+    color: #0FF;
+}
+a:visited {
+    color: #808080;
+}
+a:hover, a:focus, summary:hover, summary:focus {
+    color: #FF0;
+}
+a:focus > .logo, :focus {
+    outline: #F00 2px solid;
+}
+a:active, summary:active {
+    color: #F00;
+}
+a:link > .logo {
+    background: #0FF;
+}
+a:visited > .logo {
+    background: #808080;
+}
+a:hover > .logo, a:focus > .logo {
+    background: #FF0;
+}
+a:active > .logo {
+    background: #F00;
+}
+
+
+
 body {
     animation: appear 0.5s 1 forwards;
     background-color: #000;
@@ -22,7 +57,15 @@ body {
     top: 0;
     width: 50%;
 }
-br, img {user-select: none}
+
+
+
+br, img, summary {
+    user-select: none
+}
+
+
+
 div.credits {
     background: #000;
     bottom: calc(1% + 5px);
@@ -34,12 +77,16 @@ div.credits {
     position: fixed;
     transform: translate(-50%, 0%);
 }
-h1, h2, small.credits {text-transform: uppercase;}
-html {
-    animation: subtle 60s infinite;
-    font-family: Consolas, Monaco, Monospace;
-/*    background: #0f0;*/ /*property for testing*/
+#title::before {
+    content: "";
+    animation: title 1s steps(1) infinite;
 }
+h1, h2, small.credits {
+    text-transform: uppercase;
+}
+
+
+
 @keyframes appear {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -53,6 +100,20 @@ html {
     83.33333333% {background: #200020;}
     100.0000000% {background: #000;}
 }
+@keyframes title {
+    0% {content: "⢿";}
+    12.5% {content: "⣻";}
+    25% {content: "⣽";}
+    37.5% {content: "⣾";}
+    50% {content: "⣷";}
+    62.5% {content: "⣯";}
+    75% {content: "⣟";}
+    87.5% {content: "⡿";}
+    100% {content: "⢿";}
+}
+
+
+
 .logo {
     bottom: 10px;
     height: 50px;
@@ -62,10 +123,9 @@ html {
     width: 50px;
     transition: background 0.25s;
 }
-a:link > .logo {background: #0FF;}
-a:visited > .logo {background: #808080;}
-a:hover > .logo, a:focus > .logo {background: #FF0;}
-a:active > .logo {background: #F00;}
+
+
+
 summary {
     display: inline;
     margin: 0;
@@ -73,6 +133,15 @@ summary {
     font-weight: bold;
 }
 summary:hover {cursor: pointer;}
+
+
+
+u:hover {
+    cursor: help;
+}
+
+
+
 ul {
     list-style-type: "- ";
     padding-left: 2em;
