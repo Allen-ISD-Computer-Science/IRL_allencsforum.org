@@ -13,4 +13,8 @@ I haven't really recruited anybody to work on this (since this was started on **
 
 ## Testing
 
-Currently, AllenCSF's appearance is tested through the CoderMerlin server [here](https://www.codermerlin.academy/users/mohibullah-meer/AllenCSF/index.html).
+Currently, AllenCSF's appearance is tested through the CoderMerlin server [here](https://www.codermerlin.academy/users/mohibullah-meer/AllenCSF/index.html). 
+
+## Further Information
+
+Data related to AllenCSF's development can be found in [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1wGzzVWPG0Zy-j3GFOdtzyu1SFKl-ybCz1bcdMLUUdXs/edit?usp=sharing).

@@ -3,46 +3,27 @@ html {
     font-family: Consolas, Monaco, Monospace;
 /*    background: #0f0;*/ /*property for testing*/
 }
-* {
-    margin: 0.5em 0;
+* {margin: 0.5em 0;}
+a {transition: color 0.25s, outline 0.25s;}
+a, summary, .logo {
+    outline-color: transparent;
+    outline-offset: 3px;
 }
-
-
-
-a {
-    text-decoration: none;
-    transition: color 0.25s;
-}
-a:link, summary {
-    color: #0FF;
-}
-a:visited {
-    color: #808080;
-}
-a:hover, a:focus, summary:hover, summary:focus {
-    color: #FF0;
-}
-a:focus > .logo, :focus {
-    outline: #F00 2px solid;
-}
+a:link, summary {color: #0FF;}
+a:visited {color: #808080;}
+a:hover, a:focus, summary:hover, summary:focus {color: #FF0;}
+a:hover, summary:hover, a:hover > .logo, :focus {outline: #FFF 1px solid;}
 a:active, summary:active {
     color: #F00;
+    outline: #F00 1px solid;
 }
-a:link > .logo {
-    background: #0FF;
-}
-a:visited > .logo {
-    background: #808080;
-}
-a:hover > .logo, a:focus > .logo {
-    background: #FF0;
-}
+a:link > .logo {background: #0FF;}
+a:visited > .logo {background: #808080;}
+a:hover > .logo, a:focus > .logo {background: #FF0;}
 a:active > .logo {
     background: #F00;
+    outline: #F00 1px solid;
 }
-
-
-
 body {
     animation: appear 0.5s 1 forwards;
     background-color: #000;
@@ -57,15 +38,7 @@ body {
     top: 0;
     width: 50%;
 }
-
-
-
-br, img, summary {
-    user-select: none
-}
-
-
-
+br, img, summary {user-select: none}
 div.credits {
     background: #000;
     bottom: calc(1% + 5px);
@@ -77,16 +50,7 @@ div.credits {
     position: fixed;
     transform: translate(-50%, 0%);
 }
-#title::before {
-    content: "";
-    animation: title 1s steps(1) infinite;
-}
-h1, h2, small.credits {
-    text-transform: uppercase;
-}
-
-
-
+h1, h2, small.credits {text-transform: uppercase;}
 @keyframes appear {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -100,20 +64,6 @@ h1, h2, small.credits {
     83.33333333% {background: #200020;}
     100.0000000% {background: #000;}
 }
-@keyframes title {
-    0% {content: "⢿ ";}
-    12.5% {content: "⣻ ";}
-    25% {content: "⣽ ";}
-    37.5% {content: "⣾ ";}
-    50% {content: "⣷ ";}
-    62.5% {content: "⣯ ";}
-    75% {content: "⣟ ";}
-    87.5% {content: "⡿ ";}
-    100% {content: "⢿ ";}
-}
-
-
-
 .logo {
     bottom: 10px;
     height: 50px;
@@ -121,27 +71,16 @@ h1, h2, small.credits {
     position: absolute;
     right: 10px;
     width: 50px;
-    transition: background 0.25s;
+    transition: background 0.25s, outline 0.25s;
 }
-
-
-
 summary {
     display: inline;
-    margin: 0;
+    margin: 1% 0;
     transition: color 0.25s;
     font-weight: bold;
 }
 summary:hover {cursor: pointer;}
-
-
-
-u:hover {
-    cursor: help;
-}
-
-
-
+u:hover {cursor: help;}
 ul {
     list-style-type: "- ";
     padding-left: 2em;
