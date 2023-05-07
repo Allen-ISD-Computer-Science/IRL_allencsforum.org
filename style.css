@@ -12,7 +12,7 @@ a, summary, .logo {
 a:link, summary {color: #0FF;}
 a:visited {color: #808080;}
 a:hover, a:focus, summary:hover, summary:focus {color: #FF0;}
-a:hover, summary:hover, a:hover > .logo, :focus {outline: #FFF 1px solid;}
+a:hover, summary:hover, a:hover > .logo, a:focus > .logo, :focus {outline: #FFF 1px solid;}
 a:active, summary:active {
     color: #F00;
     outline: #F00 1px solid;
@@ -65,12 +65,8 @@ h1, h2, small.credits {text-transform: uppercase;}
     100.0000000% {background: #000;}
 }
 .logo {
-    bottom: 10px;
-    height: 50px;
     margin: 0;
     position: absolute;
-    right: 10px;
-    width: 50px;
     transition: background 0.25s, outline 0.25s;
 }
 summary {
