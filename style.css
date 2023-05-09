@@ -40,7 +40,7 @@ body {
 }
 #body {padding-bottom: 70px;}
 br, img, summary {user-select: none}
-div.credits {
+div#credits {
     background: #000;
     bottom: calc(1% + 5px);
     left: calc(12% - 5px);
@@ -51,7 +51,7 @@ div.credits {
     position: fixed;
     transform: translate(-50%, 0%);
 }
-h1, h2, small.credits {text-transform: uppercase;}
+h1, h2, small#creditstitle {text-transform: uppercase;}
 @keyframes appear {
     0% {opacity: 0;}
     100% {opacity: 1;}

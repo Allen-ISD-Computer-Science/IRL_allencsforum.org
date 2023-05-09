@@ -2,14 +2,19 @@
 
 A new webpage for Allen High School's Computer Science Forum.
 
-## Remaking allencs.org
+## Remaking [allencs.org](https://www.allencs.org)
 
-This new page doesn't necessarily expand on the old allencs.org, but rather reformats it to look richer and more aesthetically pleasing.
+Started on **April 14, 2023**, this new website aspires to expand on the previous iterations of allencs.org in a style more appealing to the eye. Implementation related to this may entail:
 
-## Authors
+- the addition of more pages to help navigate the forum online and stay informed
+- more interactivity using JavaScript
+- login features using languages such as PHP or SQL (Probably not.)
 
-I haven't really recruited anybody to work on this (since this was started on **April 14, 2023**), so the only person working in this repository is: 
-* [me](https://github.com/mohibm708)!
+## Contribution
+
+| Contributor | Role |
+| ----------- | ---- |
+| [Mohibullah Meer](https://www.codermerlin.academy/users/mohibullah-meer/Digital%20Portfolio/index.html) | HTML/CSS programming, appearance |
 
 ## Testing
 
@@ -17,4 +22,4 @@ Currently, AllenCSF's appearance is tested through the CoderMerlin server [here]
 
 ## Further Information
 
-Data related to AllenCSF's development can be found in [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1wGzzVWPG0Zy-j3GFOdtzyu1SFKl-ybCz1bcdMLUUdXs/edit?usp=sharing).
+Data related to AllenCSF's development can be found in this [spreadsheet](https://docs.google.com/spreadsheets/d/1wGzzVWPG0Zy-j3GFOdtzyu1SFKl-ybCz1bcdMLUUdXs/edit?usp=sharing).
