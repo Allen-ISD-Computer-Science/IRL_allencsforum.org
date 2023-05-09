@@ -4,10 +4,10 @@ html {
 /*    background: #0f0;*/ /*property for testing*/
 }
 * {margin: 0.5em 0;}
-a {transition: color 0.25s, outline 0.25s;}
+a {transition: color 0.25s, outline-color 0.25s;}
 a, summary, .logo {
     outline-color: transparent;
-    outline-offset: 3px;
+    outline-offset: 1px;
 }
 a:link, summary {color: #0FF;}
 a:visited {color: #808080;}
@@ -38,6 +38,7 @@ body {
     top: 0;
     width: 50%;
 }
+#body {padding-bottom: 70px;}
 br, img, summary {user-select: none}
 div.credits {
     background: #000;
@@ -67,7 +68,7 @@ h1, h2, small.credits {text-transform: uppercase;}
 .logo {
     margin: 0;
     position: absolute;
-    transition: background 0.25s, outline 0.25s;
+    transition: background 0.25s, outline-color 0.25s;
 }
 summary {
     display: inline;
