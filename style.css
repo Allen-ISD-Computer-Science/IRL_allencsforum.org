@@ -5,7 +5,7 @@ html {
     overflow-wrap: break-word;
 }
 * {margin: 0.5em 0;}
-a {transition: color 0.25s, outline-color 0.25s;}
+a {transition: color 0.125s, outline-color 0.125s;}
 a, summary, .logo {
     outline-color: transparent;
     outline-offset: 1px;
@@ -26,31 +26,40 @@ a:active > .logo {
     outline: #F00 1px solid;
 }
 body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    color: #FFF;
+}
+#body {padding-bottom: 70px;}
+br, img, summary, #navbar {user-select: none}
+#container {
     animation: appear 0.5s 1 forwards;
     background-color: #000;
-    color: #FFF;
     left: 0;
     margin: 0 24%;
     min-height: 100%;
-    opacity: 0;
+    opacity: 1;
     outline: #FFF 3px solid;
     padding: 0 1%;
     position: absolute;
     top: 0;
     width: 50%;
 }
-#body {padding-bottom: 70px;}
-br, img, summary, #navbar {user-select: none}
 #credits {
     background: #000;
     bottom: 10px;
-    left: 10px;
+    left: 11.5%;
     margin: 0;
     max-width: calc(16% - 3px);
     outline: #FFF 3px solid;
     padding: 0.5% 1%;
     position: fixed;
     max-height: calc(96% - 10px);
+    transform: translate(-50%, 0);
 }
 #creditstitle {
     font-size: 1em;
@@ -63,6 +72,11 @@ h1, h2, #creditstitle, #navbar {text-transform: uppercase;}
 @keyframes appear {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+@keyframes benning {
+    0% {left: 10px;}
+    50% {left: calc(24% - 63px);}
+    100% {left: 10px;}
 }
 @keyframes subtle {
     0.000000000% {background: #000;}
@@ -78,7 +92,7 @@ h1, h2, #creditstitle, #navbar {text-transform: uppercase;}
     right: 10px;
     margin: 0;
     position: absolute;
-    transition: background 0.25s, outline-color 0.25s;
+    transition: background 0.125s, outline-color 0.125s;
 }
 #navbar {
     position: fixed;
@@ -97,7 +111,7 @@ h1, h2, #creditstitle, #navbar {text-transform: uppercase;}
     outline: none;
 }
 #navbar div {
-    transition: background 0.25s, color 0.25s;
+    transition: background 0.125s, color 0.125s;
     margin: 0.5em 0;
     padding: 0 1em;
     color: #000;
@@ -115,8 +129,20 @@ summary {
     margin: 1% 0;
     transition: color 0.25s;
 }
-summary:hover {cursor: pointer;}
-u:hover {cursor: help;}
+summary:hover, #theben:hover {cursor: pointer;}
+#theben {
+    opacity: 0;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    margin: 0;
+    animation: benning 5s infinite linear;
+    transition: opacity 0.125s;
+}
+#theben:hover {
+    opacity: 1;
+    animation-play-state: paused;
+}
 ul {
     list-style-type: "- ";
     padding-left: 2em;
