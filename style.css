@@ -1,7 +1,8 @@
 html {
     animation: subtle 60s infinite;
     font-family: Consolas, Monaco, Monospace;
-/*    background: #0f0;*/ /*property for testing*/
+    /*background: #0f0;*/ /*property for testing*/
+    overflow-wrap: break-word;
 }
 * {margin: 0.5em 0;}
 a {transition: color 0.25s, outline-color 0.25s;}
@@ -32,26 +33,33 @@ body {
     margin: 0 24%;
     min-height: 100%;
     opacity: 0;
-    outline: #FFF 5px solid;
+    outline: #FFF 3px solid;
     padding: 0 1%;
     position: absolute;
     top: 0;
     width: 50%;
 }
 #body {padding-bottom: 70px;}
-br, img, summary {user-select: none}
-div#credits {
+br, img, summary, #navbar {user-select: none}
+#credits {
     background: #000;
-    bottom: calc(1% + 5px);
-    left: calc(12% - 5px);
+    bottom: 10px;
+    left: 10px;
     margin: 0;
-    max-width: calc(16% - 5px);
-    outline: #FFF 5px solid;
+    max-width: calc(16% - 3px);
+    outline: #FFF 3px solid;
     padding: 0.5% 1%;
     position: fixed;
-    transform: translate(-50%, 0%);
+    max-height: calc(96% - 10px);
 }
-h1, h2, small#creditstitle {text-transform: uppercase;}
+#creditstitle {
+    font-size: 1em;
+    margin: 0;
+    text-decoration: underline;
+    word-break: break-all;
+    font-weight: bold;
+}
+h1, h2, #creditstitle, #navbar {text-transform: uppercase;}
 @keyframes appear {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -66,15 +74,46 @@ h1, h2, small#creditstitle {text-transform: uppercase;}
     100.0000000% {background: #000;}
 }
 .logo {
+    bottom: 10px;
+    right: 10px;
     margin: 0;
     position: absolute;
     transition: background 0.25s, outline-color 0.25s;
 }
+#navbar {
+    position: fixed;
+    outline: #FFF 3px solid;
+    margin: 0;
+    right: 10px;
+    top: 10px;
+    padding: 0 ;
+    background: #000;
+    text-align: center;
+    font-weight: bold;
+}
+#navbar > a {
+    all: revert;
+    text-decoration: none;
+    outline: none;
+}
+#navbar div {
+    transition: background 0.25s, color 0.25s;
+    margin: 0.5em 0;
+    padding: 0 1em;
+    color: #000;
+}
+#navbar > a:link > div {background: #0FF;}
+#navbar > a:visited > div {background: #808080;}
+#navbar > a:hover > div, #navbar > a:focus > div {background: #FF0;}
+#navbar > a:active > div {
+    background: #F00;
+    color: #FFF;
+}
+#navbar > div {background: #FFF;}
 summary {
     display: inline;
     margin: 1% 0;
     transition: color 0.25s;
-    font-weight: bold;
 }
 summary:hover {cursor: pointer;}
 u:hover {cursor: help;}
