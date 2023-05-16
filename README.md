@@ -12,6 +12,6 @@ Started on **April 14, 2023**, this new website expands on the previous iteratio
 ## Deployment and Testing
 As of **May 10, 2023**, the data in this repository is being deployed to [allencs.org](https://www.allencs.org/).
 
-New additions to AllenCSF are tested before deployment in this [website](https://www.codermerlin.academy/users/mohibullah-meer/AllenCSF/index.html) on the CoderMerlin server.
+New additions to AllenCSF are tested before deployment in this [page](https://www.codermerlin.academy/users/mohibullah-meer/AllenCSF/index.html) on the CoderMerlin server.
 ## Further Information
 Data related to AllenCSF's development can be found in this [spreadsheet](https://docs.google.com/spreadsheets/d/1wGzzVWPG0Zy-j3GFOdtzyu1SFKl-ybCz1bcdMLUUdXs/edit?usp=sharing).
