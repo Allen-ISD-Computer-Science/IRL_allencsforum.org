@@ -78,6 +78,13 @@ h1, h2, #creditstitle, #navbar {text-transform: uppercase;}
     50% {left: calc(24% - 63px);}
     100% {left: 10px;}
 }
+@keyframes rage {
+    0% {transform: translate(1px, 1px)}
+    25% {transform: translate(1px, -1px)}
+    50% {transform: translate(-1px, 1px)}
+    75% {transform: translate(-1px, -1px)}
+    100% {transform: translate(1px, 1px)}
+}
 @keyframes subtle {
     0.000000000% {background: #000;}
     16.66666667% {background: #200000;}
@@ -139,11 +146,13 @@ summary:hover, #theben:hover {cursor: pointer;}
     margin: 0;
     animation: benning 5s infinite linear;
     transition: opacity 0.125s;
+    transform: 0;
 }
 #theben:hover {
     opacity: 1;
     animation-play-state: paused;
 }
+#theben:active {animation: benning 5s infinite paused linear, rage 0.1s infinite steps(1);}
 ul {
     list-style-type: "- ";
     padding-left: 2em;
