@@ -9,7 +9,7 @@ Started on **April 14, 2023**, this new website expands on the previous iteratio
 | Contributor | Role |
 | ----------- | ---- |
 | [Mohibullah Meer](https://github.com/mohibm708/) | HTML/CSS programming, appearance |
-| [Nathan Charles] (https://github.com/Lettuce287) | React/CSS Programming, appearance |
+| [Nathan Charles](https://github.com/Lettuce287) | React/CSS Programming, appearance |
 | [Mr. Ben](https://github.com/DBenYaakov/) | Deployment |
 ## Deployment and Testing
 As of **May 10, 2023**, the data in this repository was being deployed to [allencs.org](https://www.allencs.org/), until the expiration of the url. The website is now hosted on [allencsforum.org](https://www.allencsforum.org/).
