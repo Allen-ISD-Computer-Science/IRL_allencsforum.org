@@ -3,7 +3,7 @@
 {% block title %}Explore{% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='map3.css') }}"> <!--This is to import all of the css for the page-->
+<link rel="stylesheet" href="../static/map3.css"> <!--This is to import all of the css for the page-->
 {% endblock %}
 
 {% block body %}
@@ -34,10 +34,10 @@
     <!--This is for the normal map images-->
     <div class="imgC" id="imgC">
     <div class="imgC3">
-      <img id="zoomIn" loading="lazy" src="{{ url_for('static', filename='zoomInFixed.png') }}" alt="Zoom in button"/>
+      <img id="zoomIn" loading="lazy" src="../static/zoomInFixed.png" alt="Zoom in button"/>
     </div>
     <div class="imgC4">
-      <img id="zoomOut" loading="lazy" src="{{ url_for('static', filename='zoomOutFixed.png') }}" alt="Zoom out button"/>
+      <img id="zoomOut" loading="lazy" src="../static/zoomOutFixed.png" alt="Zoom out button"/>
     </div>
     <div class="legendC">
       <div class="topBar"><div class="topText">LEGEND</div><div class="closeInfo">X</div></div>
@@ -51,10 +51,10 @@
       </ul>
     </div>
     <div class="imgC6">
-      <img id="moreInfo" loading="lazy" src="{{ url_for('static', filename='more.png') }}" alt="Expand legend button"/>
+      <img id="moreInfo" loading="lazy" src="../static/more.png" alt="Expand legend button"/>
     </div>
     <div class="imgC6Mobile">
-      <img id="moreInfo" loading="lazy" src="{{ url_for('static', filename='more.png') }}" alt="Expand legend button"/>
+      <img id="moreInfo" loading="lazy" src="../static/more.png" alt="Expand legend button"/>
     </div>
     <!--Note- imgC7 is just a container in this instance, doesn't do anything special-->
     <div class="imgC7">
@@ -69,7 +69,7 @@
     <div class="imgC9">
       <h2>STEAM CENTER | FLOOR <span class="floorNum">1</span></h2>
     </div>
-    <img id="iMap" loading="lazy" src="{{ url_for('static', filename='STEAM-map-01.svg') }}" />
+    <img id="iMap" loading="lazy" src="../static/STEAM-map-01.svg" />
     </div>
     <div class="legendCMobile">
       <div class="topBar"><div class="topText" style="padding-left:10px;">LEGEND</div><div class="closeInfoMobile">X</div></div>
@@ -131,7 +131,7 @@
 
 {% include "components/footer.html" %}
 
-<!--<script src="{{ url_for('static', filename='map3.js') }}"></script>-->
+<!--<script src="../static/map3.js"></script>-->
 <script>
 var scrollTop =  window.pageYOffset || document.documentElement.scrollTop;
 var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
