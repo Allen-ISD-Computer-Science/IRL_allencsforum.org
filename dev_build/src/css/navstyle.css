@@ -1,0 +1,56 @@
+.title {
+  color: white;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  padding-right: 55%;
+}
+
+.navcontainer {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  height: 8vh;
+  background-color: rgb(37, 34, 34);
+  border-bottom: 5px solid black;
+  position: relative;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: rgb(72, 69, 205);
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(72, 69, 205);
+}
