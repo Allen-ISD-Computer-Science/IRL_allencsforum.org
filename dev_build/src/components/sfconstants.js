@@ -1,8 +1,10 @@
 export const settings = {
     dots: true,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     draggable: false,
-    speed: 500,
+    speed: 700,
     slidesToShow: 3,
     slidesToScroll: 1
 };
