@@ -1,21 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './css/style.css';
-import Layout from './components/layout.js';
-import HomePage from './pages/home.js';
-import Clubs from './pages/clubs.js';
-import ErrorPage from './pages/errorpage.js';
+import '../css/errorstyle.css'
 
-export default function App() {
+/*
+  Standard 404 page. Nothing special. Rendered in react-router.
+*/
+
+export default function ErrorPage() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="/Clubs" element={<Clubs />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div id="error-page">
+      <h1>Oops!</h1>
+      <p>Sorry, an unexpected error has occured.</p>
+      <p><i>404</i></p>
+    </div>
   );
 }
+

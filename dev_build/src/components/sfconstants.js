@@ -1,3 +1,11 @@
+/*
+    No HTML/CSS to be found here, literally just constants that are mapped/unpacked as arguments for slider formatting (thus *SF*constants.js)
+*/
+
+/*
+    Slider settings, don't change the appearance but they do change behavior (swap speed, autoplay, # of slides shown, etc.)
+    Documentation found at react-slick-carousel (google), @ mohib please LMK if the behavior seems off 
+*/
 export const settings = {
     dots: true,
     infinite: true,
@@ -8,6 +16,12 @@ export const settings = {
     slidesToShow: 3,
     slidesToScroll: 1
 };
+
+/*
+    Placeholder bum text for clubs because half of these don't have mission statements! Mr. Ben, please force them to make some!!
+    Unsure whether or not to make buttons redirect to club homepages or just compile clubs into one page with regurgitated mission statements because
+    I only know one organization that has a genuine website (Cybersecurity)
+*/
 
 export const clubs = [
     {
