@@ -13,5 +13,7 @@ python3 -m pip install \
    flask \
    pandas \
    datetime \
-   
-    
+   boto \
+   oauthlib \
+   pytz \
+   cachecontrol \
