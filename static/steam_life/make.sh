@@ -17,3 +17,5 @@ python3 -m pip install \
    oauthlib \
    pytz \
    cachecontrol \
+   wheel \
+   uwsgi \

@@ -2,7 +2,6 @@
 /node_modules
 testing.conf
 boto.config
-/venv
 STEAMLifeFlaskClientKeys.json
 Web_App_Client_Secrets.json
 schema.sql

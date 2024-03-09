@@ -12,7 +12,6 @@ global createNewUser
 createNewUser = False
 
 
-
 calendarTable = Table('STEAM-APP-Calendar', connection=conn)
 clubsTable = Table('STEAM-APP-Clubs', connection=conn)
 serviceTable = Table('STEAM-APP-Service', connection=conn)
