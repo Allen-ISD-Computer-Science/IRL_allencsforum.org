@@ -22,24 +22,8 @@ export default function NavBar() {
             <li>
             <NavLink to="/Classes">Classes</NavLink>
             </li>
-          </ul>
-        </div>
-        {/* 
-          vvv just the title currently; 
-          TO DO: replace with logo/icon/any official graphical work done for allencs for better look (should probably make a github issue for this!)
-        */}
-        <div className="title">
-          allencsforum.org
-        </div>
-        <div className="nav-elements">
-          <ul>
             <li>
-              {/* 
-                Attempt at learning how to make a dropdown menu using react's built in components, wish me luck!
-              */}
-              <div>
-
-              </div>
+            <NavLink to="/Clubs">Clubs</NavLink>
             </li>
             <li>
             <NavLink to="/Projects">Projects</NavLink>

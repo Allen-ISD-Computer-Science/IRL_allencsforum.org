@@ -26,26 +26,49 @@ export const settings = {
 export const clubs = [
     {
         name: 'CSHS',
+        orgtype: 'Clubs',
+        img: '../assets/lou.jpg',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+        name: 'Game Development',
+        orgtype: 'Clubs',
+        img: '../assets/lou.jpg',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+        name: 'Mr. Ben Merch Store',
+        orgtype: 'Clubs',
         img: '../assets/lou.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         name: 'Cybersecurity',
+        orgtype: 'Competitions',
         img: '../assets/lou.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         name: 'OC3',
+        orgtype: 'Competitions',
         img: '../assets/lou.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         name: 'Project RENEW',
+        orgtype: 'Projects',
+        img: '../assets/lou.jpg',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+        name: 'Project MAE',
+        orgtype: 'Projects',
         img: '../assets/lou.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         name: 'IRL Dev',
+        orgtype: 'Internships',
         img: '../assets/lou.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     }

@@ -1,22 +1,37 @@
 .carousel-container {
     width: 80%;
     margin: auto;
-    height: 40%;
+    margin-top: 5%;
+    height: 60%;
 }
 
 .card {
-    background-color: rgb(37, 34, 34);
-    color: #ebebeb;
-    height: 100%;
+    margin-bottom: 5%;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    height: 95%;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .header {
-    background-color: rgb(55, 53, 166);
-    height: 20%;
-    max-height: 75px;
+    height: 45%;
     margin: auto;
+}
+
+.header img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.org-title {
+    margin-top: 10%;
+    color: rgb(69, 82, 230);
+    font-size: calc(0.7vw + 0.6vh);
+    text-align: left;
+    padding-left: 10%;
 }
 
 .club-data {
@@ -24,33 +39,22 @@
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    text-align: center;
 }
 
 .club-name {
-    font-size: calc(1vw + 1vh);
+    font-size: calc(1.1vw + 1vh);
     text-wrap: balance;
-    text-align: center;
-    padding-top: 14;
+    text-align: left;
+    padding-bottom: 5%;
+    padding-left: 10%;
     margin: 0;
 }
 
 .club-desc {
-    margin: 10%;
     font-size: calc(0.75vw + 0.75vh);
     text-wrap: balance;
-}
-
-.club-bttn {
-    background-color: rgb(213, 52, 52);
-    color: white;
-    font-weight: 500;
-    font-size: calc(0.65vw + 0.65vh);
-    border-radius: 10px;
-    border: 0;
-    width: 60%;
-    height: 3em;
-    margin: auto;
+    text-align: left;
+    padding-left: 10%;
 }
 
 .slick-slide > div {

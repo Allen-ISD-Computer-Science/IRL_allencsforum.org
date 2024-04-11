@@ -20,11 +20,12 @@ export default function Carousel() {
                 {clubs.map((club) => (
                     <div className="card">
                         <div className="header">
-                            <h2 className="club-name">{club.name}</h2>
+                            <img src={require('../assets/lou.jpg')}></img>
                         </div>
                         <div className="club-data">
+                            <span className="org-title">{club.orgtype}</span>
+                            <h2 className="club-name">{club.name}</h2>
                             <span className="club-desc">{club.desc}</span>
-                            <button className="club-bttn">Read More</button>     
                         </div>
                     </div>
                 ))}
