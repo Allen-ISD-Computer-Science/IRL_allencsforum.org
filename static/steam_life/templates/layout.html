@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{% endblock %} - STEAM Life</title>
-  <link href="{{ url_for('static', filename='favicon.png') }}" rel="icon" type="image/x-icon">
+  <link href="static/favicon.png" rel="icon" type="image/x-icon">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
@@ -26,7 +26,7 @@
   <script src="https://cdn.jsdelivr.net/gh/Eonasdan/tempus-dominus@master/dist/js/tempus-dominus.js"
     crossorigin="anonymous"></script>-->
 
-  <link rel="stylesheet" href="{{ url_for('static', filename='footerPage.css') }}">
+  <link rel="stylesheet" href="static/footerPage.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -548,20 +548,20 @@
   });
 
   $("#aboutBtn").on("click", function () {
-    window.location.href = "/about";
+    window.location.href = "about";
   });
   $("#faqBtn").on("click", function () {
-    window.location.href = "/help";
+    window.location.href = "help";
   });
   $("#logInBtn").on("click", function () {
     if ($(".userEmail").text() != "Other-User") {
-      window.location.href = "/logout";
+      window.location.href = "logout";
     } else {
-      window.location.href = "/login";
+      window.location.href = "login";
     }
   });
   $("#dashboardBtn").on("click", function () {
-    window.location.href = "/dashboard";
+    window.location.href = "dashboard";
   });
   $(".contrastDropdown").children(".dropdown-menu").children(".dropdown-item").on("click", function () {
     var contrastChildren = document.querySelector(".contrastDropdown").querySelector(".dropdown-menu").getElementsByClassName("dropdown-item");

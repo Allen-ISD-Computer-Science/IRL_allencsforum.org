@@ -7,4 +7,4 @@ set -eu
 source .venv/bin/activate
 
 # Run main
-PORT=$VAPOR_LOCAL_PORT python3 main.py
+HOST=$VAPOR_LOCAL_HOST PORT=$VAPOR_LOCAL_PORT python3 main.py
