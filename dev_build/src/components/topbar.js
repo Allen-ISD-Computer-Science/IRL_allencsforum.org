@@ -6,9 +6,6 @@ export default function NavBar() {
   return (
     <nav className="navbar">
       <div className="navcontainer">
-        <div className="title">
-          allencsforum.org
-        </div>
         <div className="nav-elements">
           <ul>
             <li>
@@ -17,6 +14,13 @@ export default function NavBar() {
             <li>
             <NavLink to="/Classes">Classes</NavLink>
             </li>
+          </ul>
+        </div>
+        <div className="title">
+          allencsforum.org
+        </div>
+        <div className="nav-elements">
+          <ul>
             <li>
             <NavLink to="/Clubs">Clubs</NavLink>
             </li>

@@ -4,15 +4,17 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 .slick-prev:before {
     color: rgb(213, 52, 52);
     font-size: 25px;
-  }
-  .slick-next:before {
+}
+.slick-next:before {
     color: rgb(213, 52, 52);
     font-size: 25px;
-  }
+}

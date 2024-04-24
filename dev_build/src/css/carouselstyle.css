@@ -15,6 +15,7 @@
 .header {
     background-color: rgb(55, 53, 166);
     height: 20%;
+    max-height: 75px;
     margin: auto;
 }
 
@@ -27,7 +28,8 @@
 }
 
 .club-name {
-    font-size: 1.3vw;
+    font-size: calc(1vw + 1vh);
+    text-wrap: balance;
     text-align: center;
     padding-top: 14;
     margin: 0;
@@ -35,18 +37,19 @@
 
 .club-desc {
     margin: 10%;
-    font-size: 1em;
+    font-size: calc(0.75vw + 0.75vh);
+    text-wrap: balance;
 }
 
 .club-bttn {
     background-color: rgb(213, 52, 52);
     color: white;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: calc(0.65vw + 0.65vh);
     border-radius: 10px;
     border: 0;
     width: 60%;
-    height: 40px;
+    height: 3em;
     margin: auto;
 }
 

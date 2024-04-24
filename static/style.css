@@ -1,0 +1,159 @@
+html {
+    animation: subtle 60s infinite;
+    font-family: Consolas, Monaco, Monospace;
+    /*background: #0f0;*/ /*property for testing*/
+    overflow-wrap: break-word;
+}
+* {margin: 0.5em 0;}
+a {transition: color 0.125s, outline-color 0.125s;}
+a, summary, .logo {
+    outline-color: transparent;
+    outline-offset: 1px;
+}
+a:link, summary {color: #0FF;}
+a:visited {color: #808080;}
+a:hover, a:focus, summary:hover, summary:focus {color: #FF0;}
+a:hover, summary:hover, a:hover > .logo, a:focus > .logo, :focus {outline: #FFF 1px solid;}
+a:active, summary:active {
+    color: #F00;
+    outline: #F00 1px solid;
+}
+a:link > .logo {background: #0FF;}
+a:visited > .logo {background: #808080;}
+a:hover > .logo, a:focus > .logo {background: #FF0;}
+a:active > .logo {
+    background: #F00;
+    outline: #F00 1px solid;
+}
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    color: #FFF;
+}
+#body {padding-bottom: 70px;}
+br, img, summary, #navbar {user-select: none}
+#container {
+    animation: appear 0.5s 1 forwards;
+    background-color: #000;
+    left: 0;
+    margin: 0 24%;
+    min-height: 100%;
+    opacity: 1;
+    outline: #FFF 3px solid;
+    padding: 0 1%;
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
+#credits {
+    background: #000;
+    bottom: 10px;
+    left: 11.5%;
+    margin: 0;
+    max-width: calc(16% - 3px);
+    outline: #FFF 3px solid;
+    padding: 0.5% 1%;
+    position: fixed;
+    max-height: calc(96% - 10px);
+    transform: translate(-50%, 0);
+}
+#creditstitle {
+    font-size: 1em;
+    margin: 0;
+    text-decoration: underline;
+    word-break: break-all;
+    font-weight: bold;
+}
+h1, h2, #creditstitle, #navbar {text-transform: uppercase;}
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes benning {
+    0% {left: 10px;}
+    50% {left: calc(24% - 63px);}
+    100% {left: 10px;}
+}
+@keyframes rage {
+    0% {transform: translate(1px, 1px)}
+    25% {transform: translate(1px, -1px)}
+    50% {transform: translate(-1px, 1px)}
+    75% {transform: translate(-1px, -1px)}
+    100% {transform: translate(1px, 1px)}
+}
+@keyframes subtle {
+    0.000000000% {background: #000;}
+    16.66666667% {background: #200000;}
+    33.33333333% {background: #202000;}
+    50.00000000% {background: #002000;}
+    66.66666667% {background: #000020;}
+    83.33333333% {background: #200020;}
+    100.0000000% {background: #000;}
+}
+.logo {
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+    position: absolute;
+    transition: background 0.125s, outline-color 0.125s;
+}
+#navbar {
+    position: fixed;
+    outline: #FFF 3px solid;
+    margin: 0;
+    right: 11.5%;
+    top: 10px;
+    padding: 0 ;
+    background: #000;
+    text-align: center;
+    font-weight: bold;
+    transform: translate(50%, 0%);
+}
+#navbar > a {
+    all: revert;
+    text-decoration: none;
+    outline: none;
+}
+#navbar div {
+    transition: background 0.125s, color 0.125s;
+    margin: 0.5em 0;
+    padding: 0 1em;
+    color: #000;
+}
+#navbar > a:link > div {background: #0FF;}
+#navbar > a:visited > div {background: #808080;}
+#navbar > a:hover > div, #navbar > a:focus > div {background: #FF0;}
+#navbar > a:active > div {
+    background: #F00;
+    color: #FFF;
+}
+#navbar > div {background: #FFF;}
+summary {
+    display: inline;
+    margin: 1% 0;
+    transition: color 0.25s;
+}
+summary:hover, #theben:hover {cursor: pointer;}
+#theben {
+    opacity: 0;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    margin: 0;
+    animation: benning 5s infinite linear;
+    transition: opacity 0.125s;
+    transform: 0;
+}
+#theben:hover {
+    opacity: 1;
+    animation-play-state: paused;
+}
+#theben:active {animation: benning 5s infinite paused linear, rage 0.1s infinite steps(1);}
+ul {
+    list-style-type: "- ";
+    padding-left: 2em;
+}
